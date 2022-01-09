@@ -11,16 +11,22 @@
          </ul>
          <script>
             function addCity() {
+                // find the city input on the page
                 var city = document.getElementById("city");
                 //console.log(text.value)
-
+                // find the list on the page
                 var ul = document.getElementById("list");
+                // create the additional element before add it to the list
+                // <li></li>
                 var li = document.createElement("li");
+                // add the city name to the li element
                 li.appendChild(document.createTextNode(city.value));
+                // add the city name to the list
                 ul.appendChild(li);
+                // clear the city value from the input field
                 city.value = ""
               }
          </script>
     </body>
-    
+
 </html>
